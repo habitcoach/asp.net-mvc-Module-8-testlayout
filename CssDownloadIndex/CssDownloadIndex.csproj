@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\ABOUT THIS TEMPLATE.txt" />
+    <None Include="wwwroot\about.html" />
+    <None Include="wwwroot\contact.html" />
+    <None Include="wwwroot\css\bootstrap-icons.css" />
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\slick.css" />
+    <None Include="wwwroot\css\tooplate-little-fashion.css" />
+    <None Include="wwwroot\faq.html" />
+    <None Include="wwwroot\fonts\bootstrap-icons.woff" />
+    <None Include="wwwroot\fonts\bootstrap-icons.woff2" />
+    <None Include="wwwroot\images\cody-lannom-G95AReIh_Ko-unsplash.jpeg" />
+    <None Include="wwwroot\images\header\businesspeople-meeting-office-working.jpg" />
+    <None Include="wwwroot\images\header\positive-european-woman-has-break-after-work.jpg" />
+    <None Include="wwwroot\images\people\beautiful-woman-face-portrait-brown-background.jpeg" />
+    <None Include="wwwroot\images\people\portrait-british-woman.jpeg" />
+    <None Include="wwwroot\images\people\senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" />
+    <None Include="wwwroot\images\people\woman-wearing-mask-face-closeup-covid-19-green-background.jpeg" />
+    <None Include="wwwroot\images\pim-chu-z6NZ76_UTDI-unsplash.jpeg" />
+    <None Include="wwwroot\images\product\anis-m-WnVrO-DvxcE-unsplash.jpeg" />
+    <None Include="wwwroot\images\product\evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" />
+    <None Include="wwwroot\images\product\jordan-nix-CkCUvwMXAac-unsplash.jpeg" />
+    <None Include="wwwroot\images\product\nature-zen-3Dn1BZZv3m8-unsplash.jpeg" />
+    <None Include="wwwroot\images\product\quokkabottles-kFc1_G1GvKA-unsplash.jpeg" />
+    <None Include="wwwroot\images\product\team-fredi-8HRKoay8VJE-unsplash.jpeg" />
+    <None Include="wwwroot\images\retail-shop-owner-mask-social-distancing-shopping.jpg" />
+    <None Include="wwwroot\images\servicescape-incorporated-_48JSlVLX6g-unsplash.jpeg" />
+    <None Include="wwwroot\images\slideshow\medium-shot-business-women-high-five.jpeg" />
+    <None Include="wwwroot\images\slideshow\team-meeting-renewable-energy-project.jpeg" />
+    <None Include="wwwroot\images\slideshow\two-business-partners-working-together-office-computer.jpeg" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\js\custom.js" />
+    <None Include="wwwroot\js\Headroom.js" />
+    <None Include="wwwroot\js\jQuery.headroom.js" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\slick.min.js" />
+    <None Include="wwwroot\product-detail.html" />
+    <None Include="wwwroot\products.html" />
+    <None Include="wwwroot\sign-in.html" />
+    <None Include="wwwroot\sign-up.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\2127_little_fashion\" />
+  </ItemGroup>
+
+</Project>

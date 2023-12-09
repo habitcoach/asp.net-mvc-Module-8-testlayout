@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@*inline javaScript*@
+<a onClick="alert('Hello World!')" style="text-decoration: none; color: #007BFF; cursor: pointer; font-weight: bold;">Click Me!</a>
+</br></br>
+
+@*Script in the same view*@
+<a onClick="helloWorld()" style="text-decoration: none; color: #007BFF; cursor: pointer; font-weight: bold;">Click Me!</a>
+
+
+@*<script>
+
+        function helloWorld() {
+
+            alert('Hello World! from different script');
+
+        }
+
+    </script>*@
+
+   @* You can also put into the site.js( a default javascript given to add script) and refer in the layout and it will run.*@

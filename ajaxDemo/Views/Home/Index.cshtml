@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<h2>AJAX Demo</h2>
+
+<button id="getDataBtn">Get Data from Server</button>
+
+<div id="result"></div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Attach a click event to the button
+            $("#getDataBtn").click(function () {
+                // Make an AJAX call to the server
+                $.ajax({
+                    url: '/Home/GetData',
+                    type: 'GET',
+                    success: function (data) {
+                        // Display the result in the result div
+                        $("#result").html('<p>' + data.message + '</p>');
+                    },
+                    error: function () {
+                        // Handle errors if any
+                        $("#result").html('<p>Error fetching data from the server.</p>');
+                    }
+                });
+            });
+        });
+    </script>
+}
+

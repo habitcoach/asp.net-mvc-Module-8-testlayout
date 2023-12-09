@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>jQuery Example</title>
+</head>
+<body>
+    <h1>Toggle Element Visibility</h1>
+    <button id="toggleButton">Toggle</button>
+    <div id="content" style="display: none;">
+        <p>This content can be toggled.</p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#toggleButton").click(function () {
+                $("#content").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+@model List<string>
+
+<h2>To-Do List</h2>
+
+<ul id="taskList">
+    @foreach (var task in Model)
+    {
+        <li>@task <button class="delete">Delete</button></li>
+    }
+</ul>
+
+<input type="text" id="newTask" placeholder="Add a new task">
+<button id="addTask">Add Task</button>
+
+
+<script>
+
+    // JavaScript for To-Do List
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const taskList = document.getElementById("taskList");
+        const newTaskInput = document.getElementById("newTask");
+        const addTaskButton = document.getElementById("addTask");
+
+        // Add a new task
+        addTaskButton.addEventListener("click", function () {
+            const taskText = newTaskInput.value.trim();
+            if (taskText !== "") {
+                const taskItem = document.createElement("li");
+                taskItem.innerHTML = `${taskText} <button class="delete">Delete</button>`;
+                taskList.appendChild(taskItem);
+                newTaskInput.value = "";
+            }
+        });
+
+        // Delete a task
+        taskList.addEventListener("click", function (e) {
+            if (e.target.classList.contains("delete")) {
+                e.target.parentElement.remove();
+            }
+        });
+    });
+
+
+</script>
